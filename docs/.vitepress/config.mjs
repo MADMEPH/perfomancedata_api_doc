@@ -1,105 +1,72 @@
 import { defineConfig } from 'vitepress'
 
+// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Performance Data API",
-  description: "Performance Data API Documentation",
-  base: '/perfomancedata_api_doc/',
+  title: "Performance data API",
+  description: "Complete API documentation for accessing performance data",
   
+  // Theme configuration
   themeConfig: {
+    // Logo
     logo: '/logo.svg',
     
-    nav: [
-      { text: 'Guide', link: '/guide/getting-started', activeMatch: '^/guide/' },
-      { text: 'API Reference', link: '/api/endpoints', activeMatch: '^/api/' },
-      { text: 'Examples', link: '/examples/php', activeMatch: '^/examples/' }
-    ],
+    // Navigation - removed for single page documentation
+    
+    // Sidebar - removed for single page documentation
 
-    sidebar: {
-      '/guide/': [
-        {
-          text: 'Guide',
-          items: [
-            { text: 'Introduction', link: '/guide/getting-started' },
-            { text: 'Authentication', link: '/guide/authentication' }
-          ]
-        }
-      ],
-      '/examples/': [
-        {
-          text: 'Code Examples',
-          items: [
-            { text: 'PHP', link: '/examples/php' },
-            { text: 'Python', link: '/examples/python' },
-            { text: 'JavaScript', link: '/examples/javascript' },
-            { text: 'cURL', link: '/examples/curl' }
-          ]
-        }
-      ]
-    },
-
-    outline: {
-      level: [2, 3],
-      label: 'On this page'
-    },
-
+    // Social links
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MADMEPH/perfomancedata_api_doc' }
     ],
 
+    // Footer
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025 Performance Data'
+      message: 'Perion Performance Data API Documentation',
+      copyright: 'Copyright © 2025'
     },
 
+    // Search
     search: {
       provider: 'local'
+    },
+
+    // Edit link
+    editLink: {
+      pattern: 'https://github.com/MADMEPH/perfomancedata_api_doc/edit/main/docs/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
+
+    // Last updated
+    lastUpdated: {
+      text: 'Last updated',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short'
+      }
     }
   },
 
-  locales: {
-    root: {
-      label: 'English',
-      lang: 'en',
-      link: '/guide/getting-started'
+  // Markdown configuration
+  markdown: {
+    theme: {
+      light: 'github-light',
+      dark: 'github-dark'
     },
-    ru: {
-      label: 'Русский',
-      lang: 'ru',
-      link: '/ru/guide/getting-started',
-      themeConfig: {
-        nav: [
-          { text: 'Руководство', link: '/ru/guide/getting-started' },
-          { text: 'API Справочник', link: '/ru/api/endpoints' },
-          { text: 'Примеры', link: '/ru/examples/php' }
-        ],
-        sidebar: {
-          '/ru/guide/': [
-            {
-              text: 'Руководство',
-              items: [
-                { text: 'Введение', link: '/ru/guide/getting-started' },
-                { text: 'Аутентификация', link: '/ru/guide/authentication' }
-              ]
-            }
-          ],
-          '/ru/examples/': [
-            {
-              text: 'Примеры кода',
-              items: [
-                { text: 'PHP', link: '/ru/examples/php' },
-                { text: 'Python', link: '/ru/examples/python' },
-                { text: 'JavaScript', link: '/ru/examples/javascript' },
-                { text: 'cURL', link: '/ru/examples/curl' }
-              ]
-            }
-          ]
-        },
-        
-        outline: {
-          level: [2, 3],
-          label: 'На этой странице'
-        }
-      }
-    }
-  }
+    lineNumbers: true
+  },
+
+  // Head tags
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'theme-color', content: '#646cff' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'en' }],
+    ['meta', { name: 'og:site_name', content: 'Perion Performance API' }]
+  ],
+
+  // Base URL for GitHub Pages
+  base: '/perfomancedata_api_doc/',
+
+  // Clean URLs
+  cleanUrls: true
 })
