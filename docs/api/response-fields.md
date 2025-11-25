@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Response Fields
 
 Complete reference for all data fields returned by the Perion API.

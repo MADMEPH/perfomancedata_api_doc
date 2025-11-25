@@ -1,18 +1,21 @@
 ---
 layout: page
+head:
+  - - meta
+    - http-equiv: refresh
+      content: 0; url=/perfomancedata_api_doc/guide/getting-started
 ---
 
 <script setup>
 import { onMounted } from 'vue'
-import { useRouter } from 'vitepress'
-
-const router = useRouter()
 
 onMounted(() => {
-  router.go('/guide/getting-started')
+  if (typeof window !== 'undefined') {
+    window.location.href = '/perfomancedata_api_doc/guide/getting-started'
+  }
 })
 </script>
 
-# Redirecting...
+# Redirecting to Guide...
 
 If you are not redirected automatically, please click [here](/guide/getting-started).
