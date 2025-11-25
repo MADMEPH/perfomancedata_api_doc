@@ -212,8 +212,7 @@ if ($data['success']) {
 Now that you've made your first requests:
 
 - 📖 Explore the [API Reference](/api/endpoints) for all available endpoints
-- 🔍 Learn about [Rate Limiting](/guide/rate-limiting)
-- 💡 Check [Best Practices](/guide/best-practices) for optimal usage
+- � Review [Authentication](/guide/authentication) best practices
 - 📝 See more [Code Examples](/examples/php) in your language
 
 ## Tips

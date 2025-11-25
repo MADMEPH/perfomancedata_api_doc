@@ -305,4 +305,4 @@ Each unique combination creates one record.
 
 - [API Endpoints](/api/endpoints) - View all available endpoints
 - [Code Examples](/examples/php) - See how to work with the data
-- [Best Practices](/guide/best-practices) - Optimize your integration
+- [Authentication Guide](/guide/authentication) - Set up your API key

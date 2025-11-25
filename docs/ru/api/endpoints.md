@@ -123,7 +123,7 @@ curl -X GET "https://domain.com/api/daily" \
 }
 ```
 
-[Смотреть полный справочник по полям ответа →](/ru/api/response-fields)
+
 
 ---
 
