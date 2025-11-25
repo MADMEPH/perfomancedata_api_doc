@@ -1,0 +1,149 @@
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+  
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dark {
+  --vp-c-bg: #0d1117;
+  --vp-c-bg-alt: #161b22;
+  --vp-c-bg-elv: #1c2128;
+  
+  --vp-c-text-1: #e6edf3;
+  --vp-c-text-2: #9198a1;
+  --vp-c-text-3: #636d7b;
+  
+  --vp-code-block-bg: #161b22;
+}
+
+/* Custom styling for API endpoint badges */
+.api-method {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.api-method.get {
+  background: #10b981;
+  color: white;
+}
+
+.api-method.post {
+  background: #3b82f6;
+  color: white;
+}
+
+.api-method.put {
+  background: #f59e0b;
+  color: white;
+}
+
+.api-method.delete {
+  background: #ef4444;
+  color: white;
+}
+
+/* Enhanced code blocks */
+.vp-code-group {
+  margin: 16px 0;
+}
+
+/* Custom alert boxes */
+.custom-block.tip {
+  border-color: #10b981;
+}
+
+.custom-block.warning {
+  border-color: #f59e0b;
+}
+
+.custom-block.danger {
+  border-color: #ef4444;
+}
+
+/* Table styling */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-alt);
+  font-weight: 600;
+}
+
+.vp-doc td, .vp-doc th {
+  border: 1px solid var(--vp-c-divider);
+  padding: 8px 12px;
+}
+
+/* Hero section customization */
+.VPHero .name {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.VPHero .text {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+}
+
+/* Feature boxes */
+.VPFeature {
+  transition: transform 0.2s;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+}
+
+/* Table of contents (outline) styling */
+.VPDocAsideOutline {
+  padding-top: 24px;
+}
+
+.VPDocAsideOutline .outline-title {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.VPDocAsideOutline .outline-link {
+  font-size: 13px;
+  line-height: 28px;
+  transition: color 0.2s;
+}
+
+.VPDocAsideOutline .outline-link:hover {
+  color: var(--vp-c-brand);
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand);
+  font-weight: 500;
+}
+
+/* Better spacing for API sections */
+.vp-doc h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 24px;
+}
+
+.vp-doc h2:first-of-type {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+}
