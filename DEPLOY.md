@@ -1,44 +1,29 @@
 # 🚀 Инструкция по деплою на GitHub Pages
 
-## Шаг 1: Создайте репозиторий на GitHub
+## Шаг 1: ✅ Репозиторий уже создан
 
-1. Перейдите на [GitHub](https://github.com)
-2. Нажмите **"New repository"** (зелёная кнопка)
-3. Заполните данные:
-   - **Repository name**: `perion-api-docs` (или любое другое имя)
-   - **Description**: `Perion Performance Data API Documentation`
-   - **Visibility**: Public или Private (оба работают)
-   - ❌ **НЕ создавайте** README, .gitignore, license (уже есть локально)
-4. Нажмите **"Create repository"**
+Репозиторий: **https://github.com/MADMEPH/perfomancedata_api_doc**
 
-## Шаг 2: Обновите конфигурацию
+## Шаг 2: ✅ Конфигурация обновлена
 
-Откройте файл `docs/.vitepress/config.mjs` и измените строку:
+Файл `docs/.vitepress/config.mjs` уже настроен:
 
 ```javascript
-base: '/perion-api-docs/',  // Замените на название вашего репозитория
-```
-
-Если ваш репозиторий называется `perion-api-docs`, то оставьте как есть.
-Если другое имя, например `api-documentation`, то:
-
-```javascript
-base: '/api-documentation/',
+base: '/perfomancedata_api_doc/',
 ```
 
 ## Шаг 3: Закоммитьте изменения
 
 ```powershell
+cd "d:\webwork\API DA\docs"
 git add .
-git commit -m "Update base path for GitHub Pages"
+git commit -m "Update branding and GitHub links"
 ```
 
 ## Шаг 4: Подключите удалённый репозиторий
 
-Замените `your-username` на ваш GitHub username:
-
 ```powershell
-git remote add origin https://github.com/your-username/perion-api-docs.git
+git remote add origin https://github.com/MADMEPH/perfomancedata_api_doc.git
 git branch -M main
 ```
 
@@ -62,7 +47,7 @@ git push -u origin main
 2. Дождитесь завершения деплоя (зелёная галочка ✅)
 3. Документация будет доступна по адресу:
    ```
-   https://your-username.github.io/perion-api-docs/
+   https://madmeph.github.io/perfomancedata_api_doc/
    ```
 
 ## 🎉 Готово!
@@ -77,7 +62,7 @@ git push -u origin main
 ```powershell
 npm run docs:dev
 ```
-Откроет http://localhost:5173/perion-api-docs/
+Откроет http://localhost:5173/perfomancedata_api_doc/
 
 ### Сборка
 ```powershell

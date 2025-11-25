@@ -1,17 +1,17 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Perion API",
+  title: "Performance Data API",
   description: "Performance Data API Documentation",
-  base: '/perion-api-docs/',
+  base: '/perfomancedata_api_doc/',
   
   themeConfig: {
     logo: '/logo.svg',
     
     nav: [
-      { text: 'Guide', link: '/guide/getting-started' },
-      { text: 'API Reference', link: '/api/endpoints' },
-      { text: 'Examples', link: '/examples/php' }
+      { text: 'Guide', link: '/guide/getting-started', activeMatch: '^/guide/' },
+      { text: 'API Reference', link: '/api/endpoints', activeMatch: '^/api/' },
+      { text: 'Examples', link: '/examples/php', activeMatch: '^/examples/' }
     ],
 
     sidebar: {
@@ -43,12 +43,12 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/perion-api' }
+      { icon: 'github', link: 'https://github.com/MADMEPH/perfomancedata_api_doc' }
     ],
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025 Perion'
+      copyright: 'Copyright © 2025 Performance Data'
     },
 
     search: {
@@ -60,18 +60,12 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
-      themeConfig: {
-        nav: [
-          { text: 'Guide', link: '/guide/getting-started' },
-          { text: 'API Reference', link: '/api/endpoints' },
-          { text: 'Examples', link: '/examples/php' }
-        ]
-      }
+      link: '/guide/getting-started'
     },
     ru: {
       label: 'Русский',
       lang: 'ru',
-      link: '/ru/',
+      link: '/ru/guide/getting-started',
       themeConfig: {
         nav: [
           { text: 'Руководство', link: '/ru/guide/getting-started' },
