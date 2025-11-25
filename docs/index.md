@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Performance Data API - Redirecting
 head:
   - - meta
     - http-equiv: refresh
@@ -16,6 +17,7 @@ onMounted(() => {
 })
 </script>
 
-# Redirecting to Guide...
-
-If you are not redirected automatically, please click [here](/guide/getting-started).
+<div style="padding: 40px; text-align: center;">
+  <h1>Redirecting to Documentation...</h1>
+  <p style="margin-top: 20px;">If you are not redirected automatically, please <a href="./guide/getting-started">click here</a>.</p>
+</div>

@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Performance Data API - Перенаправление
 head:
   - - meta
     - http-equiv: refresh
@@ -16,6 +17,7 @@ onMounted(() => {
 })
 </script>
 
-# Перенаправление на Руководство...
-
-Если вы не были перенаправлены автоматически, пожалуйста, нажмите [здесь](/ru/guide/getting-started).
+<div style="padding: 40px; text-align: center;">
+  <h1>Перенаправление на документацию...</h1>
+  <p style="margin-top: 20px;">Если вы не были перенаправлены автоматически, пожалуйста, <a href="./guide/getting-started">нажмите здесь</a>.</p>
+</div>
