@@ -1,6 +1,8 @@
-# README
+# Perion API Documentation
 
-## Perion API Documentation
+[![Deploy to GitHub Pages](https://github.com/your-username/perion-api-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-username/perion-api-docs/actions/workflows/deploy.yml)
+
+> 🌐 **Live Documentation**: [https://your-username.github.io/perion-api-docs/](https://your-username.github.io/perion-api-docs/)
 
 This documentation is built with [VitePress](https://vitepress.dev/) and deployed to GitHub Pages.
 
