@@ -8,6 +8,7 @@ Complete reference for all available API endpoints.
 https://api.digitalart.in.ua
 ```
 
+
 ---
 
 ## Health Check
@@ -147,7 +148,8 @@ curl -X GET "https://api.digitalart.in.ua/api/hourly?start_date=2025-11-24&end_d
     {
       "date": "2025-11-24",
       "hour": 14,
-      "asset_gid": "AP0000000",
+      "asset_gid": "AP0000000
+",
       "country_code": "US",
       "device_type": "desktop",
       "channel": "organic",
