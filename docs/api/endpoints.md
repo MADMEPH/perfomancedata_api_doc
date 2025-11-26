@@ -55,14 +55,14 @@ GET /api/daily
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `asset_gid` | string | **Yes** | Asset identifier (e.g., `AP1008794`) |
+| `asset_gid` | string | **Yes** | Asset identifier (e.g., `AP0000000`) |
 | `start_date` | string | **Yes** | Start date in `YYYY-MM-DD` format |
 | `end_date` | string | **Yes** | End date in `YYYY-MM-DD` format |
 
 ### Example Request
 
 ```bash
-curl -X GET "https://api.digitalart.in.ua/api/daily?start_date=2025-11-24&end_date=2025-11-24&asset_gid=AP1008794" \
+curl -X GET "https://api.digitalart.in.ua/api/daily?start_date=2025-11-24&end_date=2025-11-24&asset_gid=AP0000000" \
   -H "API-Key: your_api_key_here"
 ```
 
@@ -74,7 +74,7 @@ curl -X GET "https://api.digitalart.in.ua/api/daily?start_date=2025-11-24&end_da
   "data": [
     {
       "date": "2025-11-24",
-      "asset_gid": "AP1008794",
+      "asset_gid": "AP0000000",
       "country_code": "US",
       "device_type": "desktop",
       "channel": "organic",
@@ -119,7 +119,7 @@ GET /api/hourly
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `asset_gid` | string | **Yes** | Asset identifier (e.g., `AP1008794`) |
+| `asset_gid` | string | **Yes** | Asset identifier (e.g., `AP0000000`) |
 | `start_date` | string | **Yes** | Start date in `YYYY-MM-DD` format |
 | `end_date` | string | **Yes** | End date in `YYYY-MM-DD` format |
 | `hour` | integer | No | Filter by specific hour (0-23). *Optional* |
@@ -127,14 +127,14 @@ GET /api/hourly
 ### Example Request (All Hours)
 
 ```bash
-curl -X GET "https://api.digitalart.in.ua/api/hourly?start_date=2025-11-24&end_date=2025-11-24&asset_gid=AP1008794" \
+curl -X GET "https://api.digitalart.in.ua/api/hourly?start_date=2025-11-24&end_date=2025-11-24&asset_gid=AP0000000" \
   -H "API-Key: your_api_key_here"
 ```
 
 ### Example Request (Specific Hour)
 
 ```bash
-curl -X GET "https://api.digitalart.in.ua/api/hourly?start_date=2025-11-24&end_date=2025-11-24&asset_gid=AP1008794&hour=14" \
+curl -X GET "https://api.digitalart.in.ua/api/hourly?start_date=2025-11-24&end_date=2025-11-24&asset_gid=AP0000000&hour=14" \
   -H "API-Key: your_api_key_here"
 ```
 
@@ -147,7 +147,7 @@ curl -X GET "https://api.digitalart.in.ua/api/hourly?start_date=2025-11-24&end_d
     {
       "date": "2025-11-24",
       "hour": 14,
-      "asset_gid": "AP1008794",
+      "asset_gid": "AP0000000",
       "country_code": "US",
       "device_type": "desktop",
       "channel": "organic",
